@@ -1,0 +1,350 @@
+/* =============
+fonts
+===============*/
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* =============
+variables
+===============*/
+:root{
+    --primary-color-1:#F5F5F5;
+    --primary-color-3:#004AAD;
+    --primary-color-5:#000000;
+    
+    --transition:all 300ms linear;
+    --spacing:0.25rem;
+    --radius:0.9rem;
+
+    --ff-primary-1:"Raleway", sans-serif;
+}
+/* ==========
+global styles
+========== */
+html{
+    scroll-behavior: smooth;
+}
+.wrapper{
+    max-width: 1180px;
+    margin: 0 auto;
+    /* background: gray; */
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color-6);
+}
+p{
+    font-family: var(--ff-primary-1);
+}
+
+h1{
+    color: var(--primary-color-3);
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    font-family: var(--ff-primary-1);
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+}
+h2{
+    color: var(--primary-color-3);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-family: var(--ff-primary-1);
+    position: relative;
+    top: -2rem;
+}
+h3{
+    color: var(--primary-color-5);
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: var(--ff-primary-1);
+    width: auto;
+}
+
+h4{
+    color: var(--primary-color-5);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-family: var(--ff-primary-1);
+    width: auto;
+    text-align: center;
+}
+h5{
+    color: var(--primary-color-5);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-family: var(--ff-primary-1);
+}
+h6{
+    color: var(--primary-color-5);
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: var(--ff-primary-1);
+}
+ul{
+    list-style-type: none;
+}
+
+  .btn{
+    text-transform: capitalize;
+    box-shadow: 3px 3px var(--primary-color-3);
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: var(--ff-primary-1);
+    font-weight: 600;
+    color: var(--primary-color-5);
+    border-radius: 1rem;
+    animation: btn 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .btn-book{
+    background: var(--primary-color-3);
+    color: var(--primary-color-1);
+    font-weight: 100;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--ff-primary-1);
+    max-width: fit-content;
+    border-radius: 1rem;
+    margin: auto;
+  }
+  .btn-book:hover{
+    transition: var(--transition);
+    background: var(--primary-color-5);
+    color: var(--primary-color-1);
+  }
+ .btn:hover{
+    background: var(--primary-color-3);
+    transition: var(--transition);
+    color: var(--primary-color-1);
+    font-weight: 100;
+ }
+ @keyframes btn{
+    0%{
+     
+    }
+    25%{
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* ==========
+nav
+========== */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px var(--primary-color-3);
+}
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    right: 2.5rem;
+}
+.nav-items a h6:hover{
+    color: var(--primary-color-3);
+    transition: var(--transition);
+    box-shadow: 0px 3px var(--primary-color-3);
+}
+.logo img{
+   max-width: 12rem;
+}
+.logo-individual{
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo-individual img{
+    max-width: 10rem;
+}
+.role-model{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========
+about
+========== */
+.about-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-container img{
+    max-width: 40rem;
+    position: relative;
+    top: 0.5rem;
+    left: 5rem;
+}
+.about-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.brands{
+    display: flex;   
+}
+/* ==========
+content
+========== */
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 8rem; */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    max-width: 28rem;
+}
+.card img:hover, .card-model img:hover{
+    opacity: 0.7;
+    transition: var(--transition);
+    /* box-shadow: 3px 3px var(--primary-color-5); */
+    transform: scale(1.02);
+}
+.card-model{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-model img{
+    max-width: 1180px;
+    max-height: 450px;
+}
+/* ==========
+models
+========== */
+.model-container{
+    display: flex;
+    justify-content: space-between;
+}
+.model-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0rem 4rem 0rem;
+}
+.model-card img{
+    width: 367px;
+    height: 460px;
+    
+}
+.model-card img:hover{
+    opacity: 0.7;
+    transition: var(--transition);
+    /* box-shadow: 3px 3px var(--primary-color-5); */
+    transform: scale(1.02);
+}
+
+/* ==========
+graphic d
+========== */
+
+.kanyiso-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+.inganawe-images{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.inganawe-images img{
+    max-height: 367px;
+    max-width: 367px; 
+}
+
+/* ==========
+photographer
+========== */
+.aviona-page{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+    max-width: 60rem;
+    margin: auto;
+}
+.tinashe-page, .wessy-page{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+    margin: auto;
+}
+.tinashe-images, .wessy-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.tinashe-images img{
+    max-width: 367px;
+    max-height: 367px;
+}
+.wessy-images img{
+    max-height: 500px;
+}
+.uriel-page{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+    max-width: 70rem;
+    margin: auto;
+}
+.gabriella-page{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    margin: auto;
+}
+.uriel-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.aviona-images{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-height: 367px;
+}
+.itumeleng-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+    max-width: 60rem;
+    margin: auto;
+}
+.itumeleng-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-height: 367px;
+}
