@@ -1,82 +1,292 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<link>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shuhari Network</title>
-    <link rel="stylesheet" href="styles.css"></link>
-    <link rel="icon" href="../favicon_io/favicon-16x16.png" type="image/png">
+    <title>Shuhari</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
+    <!-- js -->
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- header -->
-    <header>
-        <div class="wrapper">
-            <nav>
-                <div class="logo"><a href="index.html"><img src="./images/Shuhari Network Drop (6).png" alt="Logo"></a></div>
-                <div class="nav-list">
-                    <ul class="nav-items">
-                        <li><a href="photographers.html"><h6>photographers</h6></a></li>
-                        <li><a href="videosgrapher.html"><h6>videographers</h6></a></li>
-                        <li><a href="editors.html"><h6>editors</h6></a></li>
-                        <li><a href="graphicDesigner.html"><h6>graphic designers</h6></a></li>
-                        <li><a href="models.html"><h6>models</h6></a></li>                        
-                    </ul>
-                </div>
-                <div class="btn contact">contact us</div>
-            </nav>
+    <!-- home page -->
+    <section class="home-page-container">
+    <!-- nav bar -->
+    <nav class="nav-container">
+        <div class="logo"><a href="#">
+            <img src="./images/Shuhari Network Drop (6).png" alt="Logo">
+        </a></div>
+        <div>
+            <ul class="nav-items">
+                <li><a href="./index.html"> home</a></li>
+                <li><a href="#about"> about</a></li>
+                <li><a href="#gallery"> gallery</a></li>
+                <li><a href="#contributions"> contributions</a></li>
+                <li><a href="#contact-us"> contact us</a></li>
+                
+            </ul>
+        </div>
+        <div class="nav-button"><a href="#" class="btn">
+            <span class="material-symbols-outlined">
+                favorite
+                </span> make donations</a>
+    </div>
+        
+    </nav>
+    
+    <!-- end of nav bar -->
+
+    <!-- hero -->
+    <header class="hero-container">
+        <div class="hero-main-text"><h1>make someone's life by giving of yours</h1></div>
+        <div class="hero-sub-text"><p>by helping each other we can spread more happiness to other join force build this happiness</p></div>
+        <div class="call-to-action">
+            <div class="btn about-us-btn"><a href="#about">about us</a></div>
+            <div class="btn contribute-btn"><a href="#contributions">apply</a></div>
         </div>
     </header>
-    <!-- end of header -->
+
+    <div class="hero-img">
+        <!-- <img src="./images/Shuhari Network Drop (6).png" alt=""> -->
+        
+    </div>
+    <!-- end of hero -->
+    </section>
+    <!-- end of home page -->
+
+    <!-- facts -->
+    <section class="facts-container">
+        <ul class="facts-items">
+            
+            <li>
+                <div class="icon"><span class="material-symbols-outlined">
+                    accessibility_new
+                    </span></div>
+                <div class="number"><h2>20 +</h2></div>
+                <div class="fact-text"><p>models</p></div>
+            </li>
+            <li>
+                <div class="icon"><span class="material-symbols-outlined">
+                    draw
+                    </span></div>
+                <div class="number"><h2>10 +</h2></div>
+                <div class="fact-text"><p>graphic designers</p></div>
+            </li>
+            <li>
+                <div class="icon"><span class="material-symbols-outlined">
+                    photo_camera
+                    </span></div>
+                <div class="number"><h2>10 +</h2></div>
+                <div class="fact-text"><p>photographers</p></div>
+            </li>
+            <li>
+                <div class="icon"><span class="material-symbols-outlined">
+                    videocam
+                    </span></div>
+                <div class="number"><h2>10 +</h2></div>
+                <div class="fact-text"><p>videographers</p></div>
+            </li>
+            <li>
+                <div class="icon"><span class="material-symbols-outlined">
+                    devices
+                    </span></div>
+                <div class="number"><h2>10 +</h2></div>
+                <div class="fact-text"><p>editors</p></div>
+            </li>
+                   
+        </ul>
+    </section>
+    <!-- end of facts -->
+
     <!-- about -->
-     <section class="wrapper">
-        <div class="about-container">
-            <div class="about-info">
-                <h3>about us</h3>
-                <p>Welcome to Shuhari Network, your gateway to premier creative services in South Africa. We specialize in connecting businesses and individuals with top-tier professionals. We offer you PHOTOGRAPHERS, MODELS, VIDEOGRAPHERS, and GRAPHIC DESIGNERS.</p>
-                <p>Our mission is to deliver exceptional creative solutions that elevate your projects and exceed your expectations all in one stop. Join us at Shuhari Network and let's create something extraordinary together.</p>
-                <div class="brands">
-                    <img src="./images/brand1.svg" alt="">
-                    <img src="./images/Ekasi Eatery.svg" alt="">
-                    <img src="./images/Glory Wines.svg" alt="">
+    <section class="about-container" id="about">
+        <div class="about-text-container">
+            <div class="about-title"><h2>about</h2></div>
+            <div class="about-main-text"><h1>our promise to uphold the trust placed.</h1></div>
+            <div class="about-sub-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nihil veritatis? Quibusdam, ratione dicta dolor quaerat delectus dolores quas neque dolore, eligendi itaque alias hic, beatae ipsam qui ipsa? Quaerat recusandae soluta harum tenetur odio animi magni est asperiores pariatur culpa assumenda iusto, laboriosam expedita odit molestiae facere maxime inventore vero dicta alias officiis illum nesciunt. Quam quod optio eius quasi atque? Consequuntur, voluptates, laboriosam officia pariatur placeat inventore excepturi, dicta cum nisi debitis praesentium veniam tempora eveniet fugit? Iusto, aspernatur earum! A totam minus, consequatur culpa dicta eum quisquam quae, aperiam tempore ipsa quos officia. Magni laboriosam voluptate rem!</p></div>
+        </div>
+        <div class="about-img"></div>
+    </section>
+    <!-- end of about -->
+
+    <!-- features -->
+    <section class="features-container">
+        <div class="features-text">
+            <div class="features-title"><h2>mission</h2></div>
+            <div class="features-main-text"><h1>donate to people in extreme need</h1></div>
+        </div>
+        <div class="features-cards-con">
+            <div class="features-card">
+                <div class="card-icon">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                        </span>
+                </div>
+                <div class="card-title"><h3>fresh & clean water</h3></div>
+                <div class="card-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quam excepturi odio?</p></div>
+            </div>
+            <div class="features-card">
+                <div class="card-icon">
+                    <span class="material-symbols-outlined">
+                        nutrition
+                        </span>
+                </div>
+                <div class="card-title"><h3>food & build home</h3></div>
+                <div class="card-text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta voluptatum adipisci!</p></div>
+            </div>
+            <div class="features-card">
+                <div class="card-icon">
+                    <span class="material-symbols-outlined">
+                        handshake
+                        </span>
+                </div>
+                <div class="card-title"><h3>home & make donation</h3></div>
+                <div class="card-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores architecto repudiandae eos?</p></div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- end of features -->
+
+    <!-- gallery -->
+    <section class="gallery-container" id="gallery">
+        <div class="gallery-text">
+            <div class="gallery-title"><h2>our gallery</h2></div>
+            <div class="gallery-main-text"><h1>how we're making a difference</h1></div>
+        </div>
+        <!-- slideshow -->
+        <div class="gallery-slideshow">
+            <!-- Carousel wrapper -->
+            <section aria-label="Newest Photos">
+                <div class="carousel" data-carousel>
+                  <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                  <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                  <ul data-slides>
+                    <li class="slide" data-active>
+                      <img src="./images/Tinashe Chihwayi/IMG_1808.jpeg" alt="Nature Image #1">
+                    </li>
+                    <li class="slide">
+                      <img src="./images/Aviona/Aviona.png" alt="Nature Image #2">
+                    </li>
+                    <li class="slide">
+                      <img src="./images/Tinashe Chihwayi/IMG_5859.jpeg" alt="Nature Image #3">
+                    </li>
+                  </ul>
+                </div>
+              </section>
+  <!-- Carousel wrapper -->
+        </div>
+    </section>
+    <!-- end of gallery -->
+    <!-- random img -->
+    <section class="random-img">
+        <div class="text-container">
+            <div class="random-img-main-text"><h1>we help fellow nonprofits access the funding,tools training</h1></div>
+            <div class="random-img-sub-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum distinctio, voluptates perspiciatis eaque sint aut hic consectetur veniam iure accusamus ex, in adipisci recusandae.</p>
+            </div>
+            <div class="btn random-img-btn"><a href="#contact-us">apply</a></div>
+        </div>
+    </section>
+    <!-- end of random img -->
+    
+    <!-- contributions -->
+    <section class="contributions-container" id="contributions">
+        <div class="contributions-text">
+            <div class="contributions-title"><h2>who we've worked with</h2></div>
+            <div class="contributions-main-text"><h1>helping today helping tomorrow charity</h1></div>
+            <div class="contributions-sub-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat tempore dolor aut, sit et atque doloremque. Natus veniam blanditiis soluta cupiditate harum ullam magnam unde.</p></div>
+        </div>
+        <div class="contributions-img">
+            <!-- <img src="./images/Lona Ngwenze/Lona Ngwenze.png" alt="" id="arrow"> -->
+            <!-- <img src="./images/Nande Maxawula/FullSizeRender.jpeg" alt="" id="con-card"> -->
+        </div>
+    </section>
+    <!-- end of contributions -->
+
+    <!-- contact -->
+    <section class="contact-container" id="contact-us">
+        <div class="contact-img">
+            <!-- <img src="./images/Elisa Mahloane/ELISA.png" alt="" id="contact-img"> -->
+        </div>
+        <div class="contact-text">
+            <div class="contact-title"><h2>contacts us</h2></div>
+            <div class="contact-main-text"><h1>lets create something great together!</h1></div>
+            <div class="contact-form"></div>
+            <div class="contact-btn-con">
+                <div class="btn contact-btn-1"> first name</div>
+                <div class="btn contact-btn-2">last name</div>
+                <div class="btn contact-btn-3">your message</div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- end of contact -->
+
+    <!-- footer -->
+    <section class="footer-container">
+        <div class="footer-logo">
+            <img src="./images/Shuhari Network Drop (6).png" alt="Logo">
+        </div>
+            <div class="footer-info">
+                <div class="footer-disposal">
+                    <h3>we are at your disposal</h3>
+                    <ul class="disposal-list">
+                        <li class="email">
+                            <span class="material-symbols-outlined">
+                                mail
+                                </span>
+                            <p>something@gmail.com</p>
+                        </li>
+                        <li class="location">
+                            <span class="material-symbols-outlined">
+                                location_on
+                                </span>
+                                <p>Borders Lake Parkways 436 Marlon Branch Cole Squares</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-discover">
+                    <ul class="discover-list">
+                        <h3>discover</h3>
+                        <li><a href="#"><p>home</p></a></li>
+                        <li><a href="#"><p>about us </p></a></li>
+                        <li><a href="#"><p>gallery</p> </a></li>
+                        <li><a href="#"><p>contributions</p></a></li>
+                        <li><a href="#"><p>contact us</p></a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="links-list">
+                        <h3>links</h3>
+                        <li><a href="#"><p>privacy & policy  us</p></a></li>
+                        <li><a href="#"><p>terms & conditions</p></a></li>
+                        <li><a href="#"><p>support</p></a></li>
+                    </ul>
+                </div>
+                <div class="footer-updates">
+                    <h3>get updates</h3>
+                    <p>keep up with the latest news of our charity organisation</p>
+                    <div class="btn footer-btn-2">enter you email adress
+                        <span class="material-symbols-outlined">
+                            mail
+                            </span>
+                    </div>
+                    <div class="btn footer-btn">subscribe now</div>
+                    
                 </div>
             </div>
-            <img src="./images/about pic.svg" alt="">
+        <div class="copyright">
+            <p>copyright&copy 2023. all rights reserved.</p>
         </div>
-     </section>
-    <!-- end of about -->
-     <!-- content -->
-      <section class="wrapper">
-        <h4>the shuhari Network</h4>
-        <div class="content">
-            <div class="card">
-                <a href="photographers.html"><img src="./images/click to photographers.png" alt=""></a>
-                <h5>photographers</h5>
-            </div>
-            <div class="card">
-                <a href="videosgrapher.html"><img src="./images/click to photographers.png" alt=""></a>
-                <h5>videographers</h5>
-            </div>
-        </div>
-        <div class="content">
-            <div class="card">
-                <a href="editors.html"><img src="./images/click to photographers.png" alt=""></a>
-                <h5>editors</h5>
-            </div>
-            <div class="card">
-                <a href="graphicDesigner.html"><img src="./images/click to photographers.png" alt=""></a>
-                <h5>graphic designers</h5>
-            </div>
-        </div>
-        <div class="content">
-            <div class="card-model">
-                <a href="models.html"><img src="./images/click to editors.png" alt=""></a>
-                <h5>models</h5>
-            </div>
-        </div>
-          
-        </div>
-      </section>
-     <!-- end of content -->
+    </section>
+    <!-- end of footer -->
+    
+    
 </body>
 </html>
