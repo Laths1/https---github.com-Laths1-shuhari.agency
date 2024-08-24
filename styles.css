@@ -26,7 +26,6 @@ variables
     --spacing:0.25rem;
     --radius:0.9rem;
 
-    --ff-primary-1:"Raleway", sans-serif;
     --black-1:#060505;
     --black-2:#030201;
     --black-3:#040303;
@@ -160,6 +159,7 @@ hero
 
     /* gap: 1rem; */
     background: linear-gradient(rgb(0, 0, 0,0.5),rgba(0, 0, 0, 0.5)), url(./images/Wessy/IMG_4900.JPG);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover
@@ -301,7 +301,7 @@ hero
 nav
 ========== */
 .nav-container{
-    /* background: var(--primary-color-1); */
+    /* background: var(--black-2); */
     padding: 0rem 8rem;
     /* grid-column-start: 1;
     grid-column-end: 4; */
@@ -332,6 +332,53 @@ nav
     text-transform: capitalize;
     font-family: var(--ff-primary-2);
 }
+.nav-items {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Align items horizontally */
+}
+
+.nav-items li {
+    position: relative; /* Position for dropdown */
+}
+
+.nav-items li a {
+    display: block; /* Ensure clickable area */
+    padding: 10px 20px; /* Add padding */
+    
+}
+
+.nav-items li a:hover {
+    background-color: var(--primary-color-4) /* Hover background color */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Absolute positioning */
+    background-color: white; /* Background color */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow */
+    z-index: 1; /* Ensure dropdown is on top */
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.dropdown-content li a {
+    padding: 12px 16px; /* Add padding */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the link fill the container */
+    color: black; /* Text color */
+}
+
+.dropdown-content li a:hover {
+    background-color: #ddd; /* Hover background color */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
 @media screen and (max-width:576px){
     .nav-container{
         padding: 0;
@@ -350,7 +397,7 @@ facts
 .facts-container{
     padding: 0 8rem;
     /* border: 2px solid #000080 ; */
-    background: var(--primary-color-1);
+    background: var(--black-2);
     height: 18rem; 
     display: flex; 
 }
@@ -616,7 +663,10 @@ features
     padding: 2rem;
     box-shadow: 0 0 1rem var(--primary-color-3) ;
     gap: 1.25rem;
-    
+    transition: var(--transition);
+}
+.features-card:hover{
+    transform: translateY(-5px);
 }
 @media screen and (max-width:576px){
     .features-container{
@@ -1217,6 +1267,108 @@ contact
      
      
  }
+
+ /* ==========
+talents
+========== */
+.talent-container,.talent-container2{
+    padding: 5rem 8rem;
+    /* height: 100vh; */
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    /* border: 2px solid #000080 ; */
+}
+.talent-container2{
+    align-items: start;
+}
+.talent-text-container{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.talent-main-text{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    
+}
+.talent-img{
+    width: 100%;
+    max-width: 48%;
+    height:35rem ;
+    /* background:url(./images/Kasim/Kasim.png) ; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: var(--transition);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    /* background-attachment: fixed; */
+    /* border: 2px solid #000080 ; */
+}
+.talent-img img{
+    height: 35rem;
+    border-radius: 10px;
+    width: 100%;
+}
+.talent-img:hover{
+    opacity: 0.9;
+    transform: scale(1.02);
+    box-shadow: 5px 5px 10px 2px var(--primary-color-6);
+}
+.talent-main-text h1{
+    font-size: 2.75rem;
+}
+.talent-sub-text p{
+    font-size:1.25rem ;
+}
+@media screen and (max-width:576px){
+    .talent-text-container{
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    .talent-img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .talent-container,.talent-container2{
+        padding: 5rem 0;
+        height: fit-content;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+}
+@media screen and (max-width:1000px){
+    .talent-text-container{
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .talent-img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .talent-container,.talent-container2{
+        padding: 5rem 0;
+        height: fit-content;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+}
 /* ==========
 footer
 ========== */
