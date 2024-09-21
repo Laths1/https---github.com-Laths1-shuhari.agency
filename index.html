@@ -12,19 +12,20 @@
     <link rel="icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
     <!-- js -->
     <script src="script.js" defer></script>
+    <script src="contactForm.js" defer></script>
 </head>
 <body>
     <!-- home page -->
     <section class="home-page-container">
     <!-- nav bar -->
     <nav class="nav-container">
-        <!-- <div class="logo"><a href="#">
+        <div class="logo"><a href="index.html">
             <img src="./images/Shuhari Network Drop (6).png" alt="Logo">
-        </a></div> -->
+        </a></div>
         <div>
             <ul class="nav-items">
                 <li><a href="./index.html">home</a></li>
-                <li><a href="#about"> about</a></li>
+                <li><a href="./index.html#about">about</a></li>
                 <li class="dropdown">
                     <a href="talent.html" class="dropbtn">talent</a>
                     <ul class="dropdown-content">
@@ -35,10 +36,27 @@
                         <li><a href="videosgrapher.html">videographers</a></li>
                     </ul>
                 </li>
-                <li><a href="#contributions">contributions</a></li>
-                <li><a href="#talent-us">contact us</a></li>
+                <li><a href="index.html#contact-us">contact</a></li>
+                <li><a href="apply.html">apply</a></li>
             </ul>
+            <div class="hamburger">
+                <a href="index.html">Home</a>
+                <div class="burger-container">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                    <span class="material-symbols-outlined menu">menu</span>
+                    </label>
+                    <div class="nav-mobile">
+                        <a href="index.html">home</a>
+                        <a href="index.html#about">about</a>
+                        <a href="talent.html">talents</a>
+                        <a href="index.html#contact-us">contact</a>
+                        <a href="apply.html">apply</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        
         <!-- <div class="nav-button"><a href="#" class="btn">
             <span class="material-symbols-outlined">
                 favorite
@@ -139,7 +157,11 @@
                         </span>
                 </div>
                 <div class="card-title"><h3>artunio</h3></div>
-                <div class="card-text"><p>"They were very professional. They didn;t give us any problems"</p></div>
+                <div class="card-text"><p><span class="material-symbols-outlined">
+                    format_quote
+                    </span>They were very professional. They didn't give us any problems<span class="material-symbols-outlined">
+                        format_quote
+                        </span></p></div>
             </div>
             <div class="features-card">
                 <div class="card-icon">
@@ -148,7 +170,11 @@
                         </span>
                 </div>
                 <div class="card-title"><h3>glory wines</h3></div>
-                <div class="card-text"><p>"The entire team displayed a high level of professionalism throughout the project"</p></div>
+                <div class="card-text"><p><span class="material-symbols-outlined">
+                    format_quote
+                    </span>The entire team displayed a high level of professionalism throughout the project<span class="material-symbols-outlined">
+                        format_quote
+                        </span></p></div>
             </div>
             <div class="features-card">
                 <div class="card-icon">
@@ -157,7 +183,11 @@
                         </span>
                 </div>
                 <div class="card-title"><h3>iconic tapes</h3></div>
-                <div class="card-text"><p>"We needed some extras to be part of our music videos and Shuhari delivered"</p></div>
+                <div class="card-text"><p><span class="material-symbols-outlined">
+                    format_quote
+                    </span>We needed some extras to be part of our music videos and Shuhari delivered<span class="material-symbols-outlined">
+                        format_quote
+                        </span></p></div>
             </div>
             
         </div>
@@ -165,37 +195,38 @@
     <!-- end of features -->
 
     <!-- gallery -->
-    <!-- <section class="gallery-container" id="gallery">
-        <div class="gallery-text">
-            <div class="gallery-title"><h2>our gallery</h2></div>
-            <div class="gallery-main-text"><h1>how we're making a difference</h1></div>
+    <h2 id="gallery">our gallery</h2>
+    <div class="carousel">
+    <div class="carousel-items">
+      <div class="carousel-item">
+        <img src="/images/Anda Ndzube/anda.svg" alt="Slide 1">
+        <div class="carousel-caption">
+            <p>caption</p>
+            <div class="btn"><a href="apply.html">apply</a></div>
         </div>
-        
-        <div class="gallery-slideshow">
-          
-            <section aria-label="Newest Photos">
-                <div class="carousel" data-carousel>
-                  <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-                  <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-                  <ul data-slides>
-                    <li class="slide" data-active>
-                      <img src="./images/Anda Ndzube/anda2.png" alt="Nature Image #1">
-                    </li>
-                    <li class="slide">
-                      <img src="./images/Aviona/Aviona.png" alt="Nature Image #2">
-                    </li>
-                    <li class="slide">
-                      <img src="./images/Tinashe Chihwayi/IMG_5859.jpeg" alt="Nature Image #3">
-                    </li>
-                  </ul>
-                </div>
-              </section>
-
+      </div>
+      <div class="carousel-item">
+        <img src="/images/Anda Ndzube/anda.svg" alt="Slide 1">
+        <div class="carousel-caption">
+            <p>caption</p>
+            <div class="btn"><a href="apply.html">apply</a></div>
         </div>
-    </section> -->
+      </div>
+      <div class="carousel-item">
+        <img src="/images/Anda Ndzube/anda.svg" alt="Slide 1">
+        <div class="carousel-caption">
+            <p>caption</p>
+            <div class="btn"><a href="apply.html">apply</a></div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+  </div>
     <!-- end of gallery -->
     <!-- random img -->
-    <section class="random-img">
+    <!-- <section class="random-img">
         <div class="text-container">
             <div class="random-img-main-text"><h1>gallery</h1></div>
             <div class="random-img-sub-text">
@@ -203,7 +234,7 @@
             </div>
             <div class="btn random-img-btn"><a href="#contact-us">apply</a></div>
         </div>
-    </section>
+    </section> -->
     <!-- end of random img -->
     
     <!-- contributions -->
@@ -232,23 +263,30 @@
         </div> -->
         <div class="contact-text">
             <div class="contact-title"><h2>contacts us</h2></div>
-            <div class="contact-main-text"><h1>lets create something great together!</h1></div>
-            <div class="contact-form"></div>
-            <div class="contact-btn-con">
-                <div class="btn contact-btn-1"> first name</div>
-                <div class="btn contact-btn-2">last name</div>
-                <div class="btn contact-btn-3">your message</div>
-            </div>
+            <div class="contact-main-text"><h1>lets create something great together!</h1></div>            
+        </div>
+        <div class="contact-btn-con">
+            <form class="contact-form" id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
             
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <button type="submit">Send</button>
+              </form>
         </div>
     </section>
     <!-- end of contact -->
 
     <!-- footer -->
     <section class="footer-container">
-        <div class="footer-logo">
+        <!-- <div class="footer-logo">
             <img src="./images/Shuhari Network Drop (6).png" alt="Logo">
-        </div>
+        </div> -->
             <div class="footer-info">
                 <div class="footer-disposal">
                     <h3>we are at your disposal</h3>
@@ -276,11 +314,11 @@
                 <div class="footer-discover">
                     <ul class="discover-list">
                         <h3>discover</h3>
-                        <li><a href="#"><p>home</p></a></li>
-                        <li><a href="#"><p>about us </p></a></li>
-                        <li><a href="#"><p>gallery</p> </a></li>
-                        <li><a href="#"><p>contributions</p></a></li>
-                        <li><a href="#"><p>contact us</p></a></li>
+                        <li><a href="index.html"><p>home</p></a></li>
+                        <li><a href="index.html#about"><p>about</p></a></li>
+                        <li><a href="talent.html"><p>talent </p></a></li>
+                        <li><a href="apply.html"><p>apply</p> </a></li>
+                        <li><a href="index.html#contact-u"><p>contact us</p></a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -288,23 +326,18 @@
                         <h3>links</h3>
                         <li><a href="#"><p>privacy & policy  us</p></a></li>
                         <li><a href="#"><p>terms & conditions</p></a></li>
-                        <li><a href="#"><p>support</p></a></li>
                     </ul>
                 </div>
                 <div class="footer-updates">
-                    <h3>get updates</h3>
-                    <p>keep up with the latest news of our charity organisation</p>
-                    <div class="btn footer-btn-2">enter you email adress
-                        <span class="material-symbols-outlined">
-                            mail
-                            </span>
-                    </div>
-                    <div class="btn footer-btn">subscribe now</div>
-                    
-                </div>
+                    <h3>Get Updates</h3>
+                    <form class="update-form">
+                      <input class="email-input" type="text" placeholder="Enter your email address">
+                      <button class="subscribe-btn" type="submit">Subscribe Now</button>
+                    </form>
+                  </div>
             </div>
         <div class="copyright">
-            <p>copyright&copy 2023. all rights reserved.</p>
+            <p>copyright&copy 2024. all rights reserved.</p>
         </div>
     </section>
     <!-- end of footer -->

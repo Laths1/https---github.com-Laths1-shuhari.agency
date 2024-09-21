@@ -19,13 +19,13 @@
         <section class="random-img">
             <!-- nav bar -->
             <nav class="nav-container">
-                <!-- <div class="logo"><a href="#">
+                <div class="logo"><a href="index.html">
                     <img src="./images/Shuhari Network Drop (6).png" alt="Logo">
-                </a></div> -->
+                </a></div>
                 <div>
                     <ul class="nav-items">
                         <li><a href="./index.html">home</a></li>
-                        <li><a href="#about"> about</a></li>
+                        <li><a href="./index.html#about">about</a></li>
                         <li class="dropdown">
                             <a href="talent.html" class="dropbtn">talent</a>
                             <ul class="dropdown-content">
@@ -36,10 +36,27 @@
                                 <li><a href="videosgrapher.html">videographers</a></li>
                             </ul>
                         </li>
-                        <li><a href="#contributions">contributions</a></li>
-                        <li><a href="#talent-us">contact us</a></li>
+                        <li><a href="index.html#contact-us">contact</a></li>
+                        <li><a href="apply.html">apply</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <a href="index.html">Home</a>
+                        <div class="burger-container">
+                            <input type="checkbox" id="check">
+                            <label for="check" class="checkbtn">
+                            <span class="material-symbols-outlined menu">menu</span>
+                            </label>
+                            <div class="nav-mobile">
+                                <a href="index.html">home</a>
+                                <a href="index.html#about">about</a>
+                                <a href="talent.html">talents</a>
+                                <a href="index.html#contact-us">contact</a>
+                                <a href="apply.html">apply</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
                 <!-- <div class="nav-button"><a href="#" class="btn">
                     <span class="material-symbols-outlined">
                         favorite
@@ -65,65 +82,78 @@
         <!-- end of hero -->
         </section>
         <!-- end of home page -->
-         <!-- models -->
-    <section class="talent-container" id="talent">
-        <div class="talent-text-container">
-            <div class="talent-title"><h2>models</h2></div>
-            <div class="talent-main-text"><h1>our promise to uphold the trust placed.</h1></div>
-            <div class="talent-sub-text"><p></p></div>
-        </div>
-        <div class="talent-img"><a href="models.html"><img src="./images/Aviona/Aviona.png" alt=""></a></div>
-    </section>
-    <!-- end of models -->
-     <!-- photographers -->
-    <section class="talent-container" id="talent-us">
-        <div class="talent-img"><a href="photographers.html"><img src="./images/Aviona/Aviona.png" alt=""></a></div>
-        <div class="talent-text">
-            <div class="talent-title"><h2>photographers</h2></div>
-            <div class="talent-main-text"><h1>strike a pose!</h1></div>
-            <div class="talent-form"></div>
-            
-            
-        </div>
-    </section>
-    <!-- end of photographers -->
-         <!-- editors -->
-    <section class="talent-container" id="talent">
-        <div class="talent-text-container">
-            <div class="talent-title"><h2>editors</h2></div>
-            <div class="talent-main-text"><h1>our promise to uphold the trust placed.</h1></div>
-            <div class="talent-sub-text"><p></p></div>
-        </div>
-        <div class="talent-img"><a href="editors.html"><img src="./images/Aviona/Aviona.png" alt=""></a></div>
-    </section>
-    <!-- end of editors -->
-     <!-- videographers -->
-    <section class="talent-container" id="talent-us">
-        <div class="talent-img"><a href="videosgrapher.html"><img src="./images/Aviona/Aviona.png" alt=""></a></div>
-        <div class="talent-text">
-            <div class="talent-title"><h2>videographers</h2></div>
-            <div class="talent-main-text"><h1>strike a pose!</h1></div>
-            <div class="talent-form"></div>
-            
-            
-        </div>
-    </section>
-    <!-- end of videographers -->
-       <!-- graphic designers -->
-    <section class="talent-container" id="talent">
-        <div class="talent-text-container">
-            <div class="talent-title"><h2>graphic designers</h2></div>
-            <div class="talent-main-text"><h1>our promise to uphold the trust placed.</h1></div>
-            <div class="talent-sub-text"><p></p></div>
-        </div>
-        <div class="talent-img"><a href="graphicDesigner.html"><img src="./images/Aviona/Aviona.png" alt=""></a></div>
-    </section>
-    <!-- end of graphic designers -->
+    <div class="manifesto-container clearfix">
+        <article class="manifesto-card">
+          <div class="manifesto-img-container">
+            <img src="./images/Meagan Williams/Meagan Williams.png" class="manifesto-img" alt="single manifesto"/>
+          </div>
+          <div class="manifesto-info">
+            <h3>Models</h3>
+            <p>
+              Join us in building a brighter future, championing equality, progress, and opportunity for all citizens.
+            </p>
+            <a href="./manifestos/ANC-2024-Elections-Manifesto.pdf" class="btn manifesto-btn">see more</a>
+          </div>
+        </article>
+        <article class="manifesto-card">
+          <div class="manifesto-img-container">
+            <img src="./images/julius.webp" class="manifesto-img" alt="single manifesto"/>
+
+          </div>
+          <div class="manifesto-info">
+            <h3>photographers</h3>
+            <p>
+              Join us in building a brighter future, championing equality, progress, and opportunity for all citizens.
+            </p>
+            <a href="./manifestos/A5-EFF-2024-Manifesto-full-version.pdf" class="btn manifesto-btn">see more</a>
+          </div>
+        </article>
+        <article class="manifesto-card">
+          <div class="manifesto-img-container">
+            <img src="./images/julius.webp" class="manifesto-img" alt="single manifesto"/>
+
+          </div>
+          <div class="manifesto-info">
+            <h3>videographers</h3>
+            <p>
+              Join us in building a brighter future, championing equality, progress, and opportunity for all citizens.
+            </p>
+            <a href="./manifestos/A5-EFF-2024-Manifesto-full-version.pdf" class="btn manifesto-btn">see more</a>
+          </div>
+        </article>
+    </div>
+    <div class="manifesto-container clearfix">
+        <article class="manifesto-card">
+          <div class="manifesto-img-container">
+            <img src="./images/Meagan Williams/Meagan Williams.png" class="manifesto-img" alt="single manifesto"/>
+          </div>
+          <div class="manifesto-info">
+            <h3>graphic designers</h3>
+            <p>
+              Join us in building a brighter future, championing equality, progress, and opportunity for all citizens.
+            </p>
+            <a href="./manifestos/ANC-2024-Elections-Manifesto.pdf" class="btn manifesto-btn">see more</a>
+          </div>
+        </article>
+        <article class="manifesto-card">
+          <div class="manifesto-img-container">
+            <img src="./images/julius.webp" class="manifesto-img" alt="single manifesto"/>
+
+          </div>
+          <div class="manifesto-info">
+            <h3>editors</h3>
+            <p>
+              Join us in building a brighter future, championing equality, progress, and opportunity for all citizens.
+            </p>
+            <a href="./manifestos/A5-EFF-2024-Manifesto-full-version.pdf" class="btn manifesto-btn">see more</a>
+          </div>
+      </article>
+    </div>
       <!-- footer -->
-    <section class="footer-container">
-        <div class="footer-logo">
+      <section class="footer-container">
+        <!-- <div class="footer-logo">
             <img src="./images/Shuhari Network Drop (6).png" alt="Logo">
-        </div>
+        </div> -->
             <div class="footer-info">
                 <div class="footer-disposal">
                     <h3>we are at your disposal</h3>
@@ -132,7 +162,7 @@
                             <span class="material-symbols-outlined">
                                 share
                                 </span>
-                            <p><a href="#">shuhari instagram</a></p>
+                            <p><a href="https://www.instagram.com/shuhari.agency?igsh=Z3E5aWxlY3p1Zzlv ">shuhari instagram</a></p>
                         </li>
                         <li class="email">
                             <span class="material-symbols-outlined">
@@ -151,11 +181,11 @@
                 <div class="footer-discover">
                     <ul class="discover-list">
                         <h3>discover</h3>
-                        <li><a href="#"><p>home</p></a></li>
-                        <li><a href="#"><p>talent us </p></a></li>
-                        <li><a href="#"><p>gallery</p> </a></li>
-                        <li><a href="#"><p>contributions</p></a></li>
-                        <li><a href="#"><p>talent us</p></a></li>
+                        <li><a href="index.html"><p>home</p></a></li>
+                        <li><a href="index.html#about"><p>about</p></a></li>
+                        <li><a href="talent.html"><p>talent </p></a></li>
+                        <li><a href="apply.html"><p>apply</p> </a></li>
+                        <li><a href="index.html#contact-u"><p>contact us</p></a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -163,23 +193,18 @@
                         <h3>links</h3>
                         <li><a href="#"><p>privacy & policy  us</p></a></li>
                         <li><a href="#"><p>terms & conditions</p></a></li>
-                        <li><a href="#"><p>support</p></a></li>
                     </ul>
                 </div>
                 <div class="footer-updates">
-                    <h3>get updates</h3>
-                    <p>keep up with the latest news of our charity organisation</p>
-                    <div class="btn footer-btn-2">enter you email adress
-                        <span class="material-symbols-outlined">
-                            mail
-                            </span>
-                    </div>
-                    <div class="btn footer-btn">subscribe now</div>
-                    
-                </div>
+                    <h3>Get Updates</h3>
+                    <form class="update-form">
+                      <input class="email-input" type="text" placeholder="Enter your email address">
+                      <button class="subscribe-btn" type="submit">Subscribe Now</button>
+                    </form>
+                  </div>
             </div>
         <div class="copyright">
-            <p>copyright&copy 2023. all rights reserved.</p>
+            <p>copyright&copy 2024. all rights reserved.</p>
         </div>
     </section>
     <!-- end of footer -->
