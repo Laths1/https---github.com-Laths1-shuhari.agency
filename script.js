@@ -23,3 +23,16 @@ function nextSlide() {
 function prevSlide() {
   showSlide(currentIndex - 1);
 }
+
+// contact us
+function sendContactMail(){
+  let param = {
+    from_name : document.getElementById("contact-name").value,
+    message : document.getElementById("contact-message").value,
+    from_email : document.getElementById("contact-email").value,
+  }
+  emailjs.send("service_3ix5u63", "template_bsc94np", param)
+  .then(alert("Email has been sent successfully from: " + param.from_name));
+  
+}
+// application

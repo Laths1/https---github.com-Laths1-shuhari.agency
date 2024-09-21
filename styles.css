@@ -1183,6 +1183,69 @@ contributions
     
 }
 /* ==========
+apply
+========== */
+.apply-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 4rem auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--ff-primary-1);
+  }
+  .option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .apply-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .apply-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .apply-form input[type="text"],
+  .apply-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .apply-form input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  .apply-form .radio-options {
+    margin-bottom: 20px;
+  }
+
+  .apply-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color-6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .apply-form button:hover {
+    background-color: #0056b3;
+  }
+/* ==========
 contact
 ========== */
 .contact-container{

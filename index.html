@@ -12,7 +12,17 @@
     <link rel="icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
     <!-- js -->
     <script src="script.js" defer></script>
-    <script src="contactForm.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "JpMadjj0p8juxtZky",
+        });
+    })();
+    </script>
+    
 </head>
 <body>
     <!-- home page -->
@@ -268,15 +278,15 @@
         <div class="contact-btn-con">
             <form class="contact-form" id="contact-form">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="contact-name" name="name" required>
             
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="contact-email" name="email" required>
             
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="contact-message" name="message" rows="4" required></textarea>
             
-                <button type="submit">Send</button>
+                <button type="submit" onclick="sendContactMail()">Send</button>
               </form>
         </div>
     </section>
