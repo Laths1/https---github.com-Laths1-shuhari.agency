@@ -30,10 +30,16 @@ function sendContactMail(){
     from_name : document.getElementById("contact-name").value,
     message : document.getElementById("contact-message").value,
     from_email : document.getElementById("contact-email").value,
-    subject : "message",
   }
-  emailjs.send("service_3ix5u63", "template_bsc94np", param)
-  .then(alert("Email has been sent successfully from: " + param.from_name));
+  console.log(param);
+  emailjs.send("service_3ix5u63", "template_4sgz0wt", param)
+  .then(function (response) {
+    console.log('SUCCESS!', response.status, response.text);
+    alert("Message has been sent successfully from: " + param.from_name);
+  })
+  .catch(function (error) {
+    console.log('FAILED', error);
+  });
   
 }
 // application
@@ -48,13 +54,20 @@ function getSelectedOption() {
 }
 function sendApplyMail(){
   let param = {
-    from_name : document.getElementById("contact-name").value,
-    message : document.getElementById("contact-message").value,
-    from_email : document.getElementById("contact-email").value,
+    from_name : document.getElementById("apply-name").value,
+    message : document.getElementById("apply-message").value,
+    from_email : document.getElementById("apply-email").value,
     category : getSelectedOption(),
-    subject : "application",
+
   }
-  emailjs.send("service_3ix5u63", "template_bsc94np", param)
-  .then(alert("Application has been sent successfully from: " + param.from_name));
+  console.log(param);
+  emailjs.send("service_3ix5u63", "template_4sgz0wt", param)
+  .then(function (response) {
+    console.log('SUCCESS!', response.status, response.text);
+    alert("Application has been sent successfully from: " + param.from_name);
+  })
+  .catch(function (error) {
+    console.log('FAILED', error);
+  });
   
 }
