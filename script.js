@@ -30,9 +30,31 @@ function sendContactMail(){
     from_name : document.getElementById("contact-name").value,
     message : document.getElementById("contact-message").value,
     from_email : document.getElementById("contact-email").value,
+    subject : "message",
   }
   emailjs.send("service_3ix5u63", "template_bsc94np", param)
   .then(alert("Email has been sent successfully from: " + param.from_name));
   
 }
 // application
+function getSelectedOption() {
+  const options = document.getElementsByName("option");
+  for (let i = 0; i < options.length; i++) {
+    if (options[i].checked) {
+      return options[i].value; // Get the value of the selected radio button
+    }
+  }
+  return null; // Return null if no option is selected
+}
+function sendApplyMail(){
+  let param = {
+    from_name : document.getElementById("contact-name").value,
+    message : document.getElementById("contact-message").value,
+    from_email : document.getElementById("contact-email").value,
+    category : getSelectedOption(),
+    subject : "application",
+  }
+  emailjs.send("service_3ix5u63", "template_bsc94np", param)
+  .then(alert("Application has been sent successfully from: " + param.from_name));
+  
+}
