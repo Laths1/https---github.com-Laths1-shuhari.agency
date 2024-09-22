@@ -402,14 +402,17 @@ nav
 @media screen and (max-width:960px){
     .nav-items {
       display: none;
+      visibility: hidden;
     }
     
     .nav-container {
       margin: 0;
-      padding: 10px 50px;
+      padding: 1rem 2rem;
       overflow: hidden;
+      max-height: 6rem;
     }
     
+
     .hamburger {
       display: flex;
       color: white;
@@ -1212,9 +1215,13 @@ apply
     margin-bottom: 10px;
     font-weight: bold;
   }
+  .apply-form textarea{
+    width: 100%;
+  }
 
   .apply-form input[type="text"],
-  .apply-form input[type="email"] {
+  .apply-form input[type="email"],
+  .apply-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -1229,6 +1236,10 @@ apply
 
   .apply-form .radio-options {
     margin-bottom: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .apply-form button {
@@ -1387,9 +1398,8 @@ talents
     flex-direction: column;   
 }
 #person-btn{
-    margin: 1rem auto;
+    margin: .5rem auto;
     width: fit-content;
-   
 }
 .talent-container2{
     box-shadow: 0 5px 15px var(--primary-color-4);
@@ -1416,6 +1426,7 @@ talents
     flex-direction: column;
     gap: 1rem;
     width: 50%;
+    padding: 1rem;
 }
 .manifesto-container{
     padding: 0 4rem;
@@ -1464,8 +1475,34 @@ talents
 
   @media screen and (max-width: 992px) {
     
+     .talent-container, .talent-container2{
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+    }
+    .talent-container2{
+        margin: 1rem auto;
+        
+    }
     .manifesto-container{
         flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+    .talent-title{
+        margin: auto;
+    }
+    .person-container{
+        padding: 1rem;        
+    }
+    
+    .talent-text-container, .talent-img img{
+        width: 100%;
+        border-radius: var(--radius);
+    }
+    .manifesto-card{
+        margin: 2rem 0;
+        width: 100%;
     }
   }
   .manifesto-img-container {
